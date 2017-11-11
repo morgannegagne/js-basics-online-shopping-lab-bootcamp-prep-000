@@ -17,8 +17,8 @@ function addToCart(item) {
 }
 
 addToCart('carrots')
-addToCart('avocado')
-addToCart('strawberries')
+//addToCart('avocado')
+//addToCart('strawberries')
 console.log(cart)
 
 function viewCart() {
@@ -30,14 +30,14 @@ function viewCart() {
     var itemPrice = cart[i][itemName]
     itemsAndPrices.push(`${itemName} at $${itemPrice}`)
   }
-console.log(itemsAndPrices)
-/*
+
   // cart is empty
   if (getCart().length===0) console.log("Your shopping cart is empty.")
   // cart has exactly 1 item
   else if (getCart().length===1) {
-    console.log(`In your cart, you have ${items[0]} at $${prices[0]}.`)
+    console.log(`In your cart, you have ${itemsAndPrices}.`)
   }
+  /*
   // cart has exactly 2 items
   else if (getCart().length===2){
     console.log(`In your cart, you have ${items[0]} at $${prices[0]} and ${items[1]} at $${prices[1]}.`)
