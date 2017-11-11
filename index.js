@@ -17,7 +17,7 @@ function addToCart(item) {
 }
 
 addToCart('carrots')
-//addToCart('avocado')
+addToCart('avocado')
 //addToCart('strawberries')
 console.log(cart)
 
@@ -37,11 +37,13 @@ function viewCart() {
   else if (getCart().length===1) {
     console.log(`In your cart, you have ${itemsAndPrices}.`)
   }
-  /*
   // cart has exactly 2 items
   else if (getCart().length===2){
-    console.log(`In your cart, you have ${items[0]} at $${prices[0]} and ${items[1]} at $${prices[1]}.`)
+    console.log(itemsAndPrices.join(" and "))
+    console.log(`In your cart, you have ${itemsAndPrices.join(" and ")}.`
+    
   }
+    /*
   // cart has 3 or more items
   else {
     var sentence = "In your cart, you have "
