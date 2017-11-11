@@ -23,16 +23,14 @@ console.log(cart)
 
 function viewCart() {
 
-  var items = []
-  var prices = []
+  var itemsAndPrices = []
 
   for (var i = 0; i < getCart().length; i++){
     var itemName = Object.keys(cart[i])
-    items.push(itemName)
     var itemPrice = cart[i][itemName]
-    prices.push(itemPrice)
+    itemsAndPrices.push(`${itemName} at $${itemPrice}`)
   }
-
+console.log(itemsAndPrices)
   // cart is empty
   if (getCart().length===0) console.log("Your shopping cart is empty.")
   // cart has exactly 1 item
@@ -53,6 +51,7 @@ function viewCart() {
   }
 
 }
+viewCart()
 
 function total() {
   var totalPrice = 0;
@@ -83,4 +82,3 @@ function placeOrder(cardNumber) {
     cart = []
   }
 }
-placeOrder(12334)
