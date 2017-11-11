@@ -31,6 +31,7 @@ function viewCart() {
     itemsAndPrices.push(`${itemName} at $${itemPrice}`)
   }
 console.log(itemsAndPrices)
+/*
   // cart is empty
   if (getCart().length===0) console.log("Your shopping cart is empty.")
   // cart has exactly 1 item
@@ -49,7 +50,7 @@ console.log(itemsAndPrices)
     }
     console.log(sentence + `and ${items[i]} at $${prices[i]}.`)
   }
-
+*/
 }
 viewCart()
 
