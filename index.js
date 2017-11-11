@@ -40,8 +40,8 @@ function viewCart() {
   // cart has exactly 2 items
   else if (getCart().length===2){
     console.log(itemsAndPrices.join(" and "))
-    console.log(`In your cart, you have ${itemsAndPrices.join(" and ")}.`
-    
+    console.log(`In your cart, you have ${itemsAndPrices.join(" and ")}.`)
+
   }
     /*
   // cart has 3 or more items
